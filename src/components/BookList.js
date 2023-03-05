@@ -7,6 +7,7 @@ import './../styles/BookList.css';
  * Components to show books in list
  */
 const BookList = ({ books, onThumbnailClick }) => {
+  
   return (
     <div className="book-list">
       {books.map((book) => (

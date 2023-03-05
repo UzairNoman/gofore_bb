@@ -1,7 +1,9 @@
 import React from "react";
 import { render, screen, fireEvent  } from '@testing-library/react';
 import BookThumbnail from "./BookThumbnail";
+
 describe("BookList", () => {
+  
     const books = [
       {
         key: '1',
@@ -18,7 +20,9 @@ describe("BookList", () => {
         isbn: ["0987654321"]
       }
     ];
+
     const handleBookClick = jest.fn();
+
     it("renders without crashing", () => {
       render(<BookThumbnail
         title={books[0].title}

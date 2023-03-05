@@ -1,13 +1,12 @@
 import React from 'react';
 import '../styles/BookListItem.css';
 
-
 /**
  * Child component of BookList, to show single item in a list style
  */
 const BookListItem = ({ title, author_name, first_publish_year, isbn, coverId, handleClick }) => {
-//   const { title, author_name, first_publish_year, isbn, cover_id } = book;
-    const imgUrl = coverId ? `http://covers.openlibrary.org/b/id/${coverId}-S.jpg` : '/no-image.jpg';
+  const imgUrl = coverId ? `http://covers.openlibrary.org/b/id/${coverId}-S.jpg` : '/no-image.jpg';
+
   return (
     <div data-testid="book-item" className='row book-list-item' onClick={handleClick}>
       <div className='col-md-3'>

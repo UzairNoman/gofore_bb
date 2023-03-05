@@ -7,6 +7,7 @@ import './../styles/BookGrid.css'
  * Component to display books in grid
  */
 const BookGrid = ({ books, onThumbnailClick }) => {
+  
   return (
     <div key={1} className="book-grid">
       {books.map((book) => (

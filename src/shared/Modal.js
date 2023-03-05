@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/Modal.css';
 
-
 /**
  * Shared modal component
  */
