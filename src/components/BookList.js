@@ -2,6 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import BookListItem from './BookListItem';
 import './../styles/BookList.css';
+
+/**
+ * Components to show books in list
+ */
 const BookList = ({ books, onThumbnailClick }) => {
   return (
     <div className="book-list">

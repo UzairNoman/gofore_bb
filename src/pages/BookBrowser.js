@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/BookBrowser.css";
 import BookGrid from "../components/BookGrid";
 import BookList from "../components/BookList";
-import Modal from "../components/Modal";
+import Modal from "../shared/Modal";
 import Pagination from "../components/Pagination";
 
 function BookBrowser() {
@@ -19,6 +19,7 @@ function BookBrowser() {
 
   useEffect(() => {
     searchBooks();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const searchBooks = async () => {
