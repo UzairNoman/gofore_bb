@@ -1,0 +1,89 @@
+/* Default styles for the book list item */
+@media (min-width: 768px){
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .col-md-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+.book-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .book-list-item img {
+    height: 120px;
+    width: 80px;
+    margin-right: 16px;
+  }
+  
+  .book-list-item-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .book-list-item-author {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .book-list-item-year {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .book-list-item-isbn {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive styles for the book list item */
+  @media screen and (max-width: 768px) {
+    .book-list-item {
+      flex-direction: column;
+      padding: 16px 0;
+      border-bottom: none;
+    }
+    
+    .book-list-item img {
+      height: auto;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+    
+    .book-list-item-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .book-list-item-title {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    
+    .book-list-item-author {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    
+    .book-list-item-year {
+      text-align: center;
+      margin-bottom: 4px;
+    }
+    
+    .book-list-item-isbn {
+      text-align: center;
+    }
+  }
+  

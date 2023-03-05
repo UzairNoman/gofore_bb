@@ -1,0 +1,37 @@
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .book-grid-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .book-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-grid-item img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .book-grid-item h5 {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .book-grid-item p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+  }
+  
