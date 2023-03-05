@@ -1,3 +1,41 @@
+# Comments for the reviewers
+
+**usability** - I have added 5 test cases, runnable by calling  `npm test`.
+
+**responsiveness** - Website is responsive and can be displayed on all devices.
+
+**performance** - To respect this, I refrained myself to use any griding/styling frameworks like Boostrap, to keep it as much lightweight as possible.
+
+**code readability** - 
+1. As a brief demonstration, I included comments in few components. Comments are something I can write as much as possible and just to give you an idea that I remembered using comments as a necessary demonstration but here I used the luxury to save my time, but this demonstration can indicate that I am a developer who can emphasize on code readability. 
+2. To stressed further on the readibility and type-checking, I included propTypes on *BookGrid* and *BookList* component.
+3. Furthermore, I admit there might be linting errors, but I would use ESLint to kill those if I am developing a real world project.
+
+**project structure** - I have tried to build a simple and manageable project structure for this small app. To motivate the practice of writing tests, I included test files with respective .js files, otherwise to be consistent with the project structure I could have made a separate **tests** folder and kept all test files there:
+
+```
+src
+│   App.js 
+│   App.css
+└───components
+│   │   BookGrid.js
+│   │   BookList.js
+|   |   ...
+└───pages
+│   │   BookBrowser.js
+│   │   ...
+│   
+└───styles
+    │   BookGrid.css
+    │   BookList.css
+    |   ...
+└───shared
+    │   Modal.js
+```
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
