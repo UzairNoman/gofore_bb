@@ -36,6 +36,11 @@ src
 
 
 
+PS: The following requirement was incorrect (or not enough explained) as the APIs need to have some <BOOK TITLE> (or in the language of UI - the input box need to have some text) to query those 100 books, without a query I assume there is no way. Therefore, I use the default search "prisoner" to get those records on the page landing.
+
+**"It should display a scrollable *grid* of the first 100 books, with the book cover thumbnail, book title, and author."**
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
